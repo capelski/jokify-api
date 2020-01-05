@@ -1,5 +1,5 @@
 {
-    "name": "jokify",
+    "name": "jokify-api",
     "version": "1.0.0",
     "description": "Cheer up your day with spanish random jokes",
     "main": "index.js",
