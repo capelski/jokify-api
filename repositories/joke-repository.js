@@ -660,7 +660,13 @@ const jokes = [
 	'- Papá, ¿que es ser bipolar?<br />' +
 	'- Es cambiar de la noche al día sin razón alguna<br />' +
 	'- ¿Cómo el tio Jorge?<br />' +
-	'- No, el tio Jorge es Drag Queen'
+	'- No, el tio Jorge es Drag Queen',
+
+	'Si crees que estás mal recuerda que puede haber alguien conociendo a tu ex y pensando que ha triumfado',
+
+	'- No sé porqué dices que soy infantil<br />' +
+	'- Porque me tienes desnuda en la cama y me estás coloreando el tatuaje<br />' +
+	'- Calla, que me salgo'
 ];
 
 const parseSearchText = text => text
