@@ -666,7 +666,30 @@ const jokes = [
 
 	'- No sé porqué dices que soy infantil<br />' +
 	'- Porque me tienes desnuda en la cama y me estás coloreando el tatuaje<br />' +
-	'- Calla, que me salgo'
+	'- Calla, que me salgo',
+
+	'- Mi hijo está practicando natación<br />' + 
+	'- ¿Y qué tal le va?<br />' +
+	'- Nada mal',
+
+	'- ¿Cuáles son los requisitos para la extracción de sangre, doctor?<br />' +
+	'- Solamente ayuno<br />' +
+	'- ¿Y cuál es?',
+
+	'- ¿Le corto la pizza en cuatro trozos o en ocho, señora?<br />' +
+	'- En cuatro, no creo que me vaya a comer los ocho<br />' +
+	'- Entiendo',
+
+	'- Me siento solo<br />' +
+	'- Yo también! Sentarse es fácil',
+
+	'- Entonces, ¿vendes el piso?<br />' +
+	'- Alquilo<br />' +
+	'- ¿Cuánto pesa?',
+
+	'- El mes pasado contraí matrimonio<br />' +
+	'- Contraje<br />' +
+	'- Claro, tenía que ser formal'
 ];
 
 const parseSearchText = text => text
