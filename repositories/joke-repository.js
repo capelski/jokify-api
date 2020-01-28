@@ -689,7 +689,24 @@ const jokes = [
 
 	'- El mes pasado contraí matrimonio<br />' +
 	'- Contraje<br />' +
-	'- Claro, tenía que ser formal'
+	'- Claro, tenía que ser formal',
+
+	'- Hola, ¿es usted Clara?<br />' +
+	'- Claro<br />' +
+	'- Disculpe, señor',
+
+	'- Hazte para allá que no cabo<br />' +
+	'- Se dice "quepo"<br />' +
+	'- Da igual, al fin y al quepo me entendiste',
+
+	'- Es usted asmática<br />' +
+	'- ¿Es grave?<br />' +
+	'- No, señora, es esdrújula',
+
+	'Mi noiva me ha pedido tiempo y distancia. Creo que quiere calcular la velocidad',
+
+	'- Quisiera comprar los libros sobre la fatiga y el cansancio<br />' +
+	'- Lo siento, están agotados'
 ];
 
 const parseSearchText = text => text
