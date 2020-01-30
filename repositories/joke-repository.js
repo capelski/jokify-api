@@ -706,7 +706,31 @@ const jokes = [
 	'Mi noiva me ha pedido tiempo y distancia. Creo que quiere calcular la velocidad',
 
 	'- Quisiera comprar los libros sobre la fatiga y el cansancio<br />' +
-	'- Lo siento, están agotados'
+	'- Lo siento, están agotados',
+
+	'- ¿Sabes qué pasaría si la tierra fuera un cubo en lugar de una esfera?<br />' +
+	'- Ni idea<br />' +
+	'- Que todos seríamos cubanos',
+
+	'- ¿Sabes en qué se convierte un país cuando se prohiben los tacos?<br />' +
+	'- Ni idea<br />' +
+	'- En un país destacado',
+
+	'- ¿Sabes qué pasa cuando se va la luz en una escuela privada?<br />' +
+	'- Ni idea<br />' +
+	'- Que no se vee un pijo',
+
+	'- ¿Sabes qué es un pelo en una cama?<br />' +
+	'- Ni idea<br />' +
+	'- El bello durmiente',
+
+	'- ¿Sabes qué le dice una impresora a otra cuando imprime algo increible?<br />' +
+	'- Ni idea<br />' +
+	'- Me has impresionado',
+
+	'- ¿Sabes en qué se convierte un pájaro cuando lo aplastas?<br />' +
+	'- Ni idea<br />' +
+	'- En una avellana'
 ];
 
 const parseSearchText = text => text
