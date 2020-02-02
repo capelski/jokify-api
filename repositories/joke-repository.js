@@ -733,6 +733,8 @@ const jokes = [
 	'- En una avellana'
 ];
 
+const getByIndex = index => jokes[index];
+
 const parseSearchText = text => text
 	.toLowerCase()
 	.replace(/á/g, 'a')
@@ -762,6 +764,7 @@ const getRandomJoke = excludedIndexes => {
 };
 
 module.exports = {
+	getByIndex,
 	getFilteredJokes,
 	getRandomJoke
 };

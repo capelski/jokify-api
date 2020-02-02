@@ -16,12 +16,19 @@ module.exports = (environmentConfig = {}) => {
     }));
     
 	app.get('/filter', (req, res, next) => {
-        var filter = req.query && req.query.text;
-        var jokes = [];
+        const filter = req.query && req.query.text;
+        let jokes = [];
         if (filter) {
             jokes = jokesRepository.getFilteredJokes(filter);
         }
         res.json(jokes);
+    });
+
+    app.get('/joke/:id', (req, res, next) => {
+        const { id } = req.params;
+        const joke = jokesRepository.getByIndex(id);
+        const status = joke ? 200 : 404;
+        res.status(status).json(joke || 'Not found');
     });
 
 	app.get('/random', (req, res, next) => {
