@@ -8,7 +8,14 @@ const defaultConfig = {
 
 module.exports = (environmentConfig = {}) => {
     const app = express();
-    
+
+    app.use((req, res, next) => {
+        res.header("Access-Control-Allow-Origin", "http://localhost:3000");
+        res.header("Access-Control-Allow-Methods", "*");
+        res.header("Access-Control-Allow-Headers", "*");
+        next();
+    });
+
     app.use(session({
         secret: environmentConfig.SESSION_SECRET || defaultConfig.SESSION_SECRET,
         resave: false,
