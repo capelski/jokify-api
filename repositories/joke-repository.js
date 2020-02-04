@@ -733,15 +733,7 @@ const jokes = [
 	'- En una avellana'
 ];
 
-const getByIndex = index => jokes[index];
-
-const parseSearchText = text => text
-	.toLowerCase()
-	.replace(/á/g, 'a')
-	.replace(/é/g, 'e')
-	.replace(/í/g, 'i')
-	.replace(/ó/g, 'o')
-	.replace(/ú/g, 'u');
+const getByIndex = index => joke(index);
 
 const getFilteredJokes = filter => {
 	const parsedFilter = parseSearchText(filter);
@@ -749,8 +741,8 @@ const getFilteredJokes = filter => {
 };
 
 const getRandomJoke = excludedIndexes => {
-	var randomNumber = Math.round(Math.random() * Number.MAX_SAFE_INTEGER);
-	var index = randomNumber % jokes.length;
+	const randomNumber = Math.round(Math.random() * Number.MAX_SAFE_INTEGER);
+	let index = randomNumber % jokes.length;
 	
 	if (excludedIndexes.length === jokes.length) {
 		excludedIndexes.length = 0;
@@ -760,8 +752,21 @@ const getRandomJoke = excludedIndexes => {
 	}
 	
 	excludedIndexes.push(index);
-	return jokes[index];
+	return joke(index);
 };
+
+const joke = index => (jokes[index] && {
+	id: index,
+	text: jokes[index]
+});
+
+const parseSearchText = text => text
+	.toLowerCase()
+	.replace(/á/g, 'a')
+	.replace(/é/g, 'e')
+	.replace(/í/g, 'i')
+	.replace(/ó/g, 'o')
+	.replace(/ú/g, 'u');
 
 module.exports = {
 	getByIndex,

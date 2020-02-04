@@ -10,7 +10,7 @@ module.exports = (environmentConfig = {}) => {
     const app = express();
 
     app.use((req, res, next) => {
-        res.header("Access-Control-Allow-Origin", "http://localhost:3000");
+        res.header("Access-Control-Allow-Origin", "http://localhost:8080");
         res.header("Access-Control-Allow-Methods", "*");
         res.header("Access-Control-Allow-Headers", "*");
         next();
@@ -22,26 +22,24 @@ module.exports = (environmentConfig = {}) => {
         saveUninitialized: true
     }));
     
-	app.get('/filter', (req, res, next) => {
-        const filter = req.query && req.query.text;
-        let jokes = [];
-        if (filter) {
-            jokes = jokesRepository.getFilteredJokes(filter);
-        }
+	app.get('/jokes', (req, res, next) => {
+        const { filter } = req.query;
+        const jokes = filter ? jokesRepository.getFilteredJokes(filter) : [];
         res.json(jokes);
     });
 
-    app.get('/joke/:id', (req, res, next) => {
+    app.get('/joke/:id?', (req, res, next) => {
         const { id } = req.params;
-        const joke = jokesRepository.getByIndex(id);
-        const status = joke ? 200 : 404;
-        res.status(status).json(joke || 'Not found');
-    });
-
-	app.get('/random', (req, res, next) => {
-        req.session.excludedIndexes = req.session.excludedIndexes || [];
-        const randomJoke = jokesRepository.getRandomJoke(req.session.excludedIndexes);
-        res.json(randomJoke);
+        if (id) {
+            const joke = jokesRepository.getByIndex(parseInt(id));
+            const status = joke ? 200 : 404;
+            res.status(status).json(joke || 'Not found');
+        }
+        else {
+            req.session.excludedIndexes = req.session.excludedIndexes || [];
+            const randomJoke = jokesRepository.getRandomJoke(req.session.excludedIndexes);
+            res.json(randomJoke);
+        }
     });
     
     return app;
