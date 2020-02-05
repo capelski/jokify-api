@@ -1,4 +1,4 @@
-const jokes = [
+const source = [
 	'Como maldice un pollo a otro pollo? Caldito seas!',
 
 	'- Cariño, pronto sera nuestro aniversario. Que me vas a regalar?<br />' +
@@ -733,32 +733,19 @@ const jokes = [
 	'- En una avellana'
 ];
 
-const getByIndex = index => joke(index);
-
-const getFilteredJokes = filter => {
-	const parsedFilter = parseSearchText(filter);
-	return jokes.filter(joke => parseSearchText(joke).indexOf(parsedFilter) > -1);
-};
-
-const getRandomJoke = excludedIndexes => {
-	const randomNumber = Math.round(Math.random() * Number.MAX_SAFE_INTEGER);
-	let index = randomNumber % jokes.length;
-	
-	if (excludedIndexes.length === jokes.length) {
-		excludedIndexes.length = 0;
-	}
-	while(excludedIndexes.indexOf(index) > -1) {
-		index = ++index % jokes.length;
-	}
-	
-	excludedIndexes.push(index);
-	return joke(index);
-};
-
-const joke = index => (jokes[index] && {
+const jokes = source.map((text, index) => ({
 	id: index,
-	text: jokes[index]
-});
+	text
+}));
+
+const count = () => jokes.length;
+
+const getAll = filter => {
+	const parsedFilter = parseSearchText(filter);
+	return jokes.filter(joke => parseSearchText(joke.text).indexOf(parsedFilter) > -1);
+};
+
+const getByIndex = index => jokes[index];
 
 const parseSearchText = text => text
 	.toLowerCase()
@@ -769,7 +756,7 @@ const parseSearchText = text => text
 	.replace(/ú/g, 'u');
 
 module.exports = {
+	count,
 	getByIndex,
-	getFilteredJokes,
-	getRandomJoke
+	getAll
 };

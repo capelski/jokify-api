@@ -6,6 +6,15 @@ const defaultConfig = {
     SESSION_SECRET: 'to be replaced with environment variables',
 };
 
+const getRandomNumber = (maxValue, excludedNumbers) =>{
+    const randomNumber = Math.round(Math.random() * Number.MAX_SAFE_INTEGER) % maxValue;
+	while(excludedNumbers.indexOf(randomNumber) > -1) {
+		randomNumber = (randomNumber + 1) % jokes.length;
+    }
+    return randomNumber;
+}
+const jokesCount = jokesRepository.count();
+
 module.exports = (environmentConfig = {}) => {
     const app = express();
 
@@ -21,25 +30,36 @@ module.exports = (environmentConfig = {}) => {
         resave: false,
         saveUninitialized: true
     }));
-    
-	app.get('/jokes', (req, res, next) => {
-        const { filter } = req.query;
-        const jokes = filter ? jokesRepository.getFilteredJokes(filter) : [];
-        res.json(jokes);
-    });
 
     app.get('/joke/:id?', (req, res, next) => {
+        const excludedIndexes = req.session.excludedIndexes = req.session.excludedIndexes || [];
+        if (excludedIndexes.length === jokesCount) {
+            excludedIndexes.length = 0;
+        }
+
         const { id } = req.params;
+        const { filter } = req.query;
+
+        let joke;
+
         if (id) {
-            const joke = jokesRepository.getByIndex(parseInt(id));
-            const status = joke ? 200 : 404;
-            res.status(status).json(joke || 'Not found');
+            joke = jokesRepository.getByIndex(parseInt(id));
+        }
+        else if (filter) {
+            const filteredJokes = jokesRepository.getAll(filter);
+            joke = filteredJokes.find(j => excludedIndexes.indexOf(j.id) === -1);
         }
         else {
-            req.session.excludedIndexes = req.session.excludedIndexes || [];
-            const randomJoke = jokesRepository.getRandomJoke(req.session.excludedIndexes);
-            res.json(randomJoke);
+            const randomId = getRandomNumber(jokesCount, excludedIndexes);
+            joke = jokesRepository.getByIndex(randomId);
         }
+
+        if (joke) {
+            excludedIndexes.push(joke.id);
+        }
+
+        const status = joke ? 200 : 404;
+        res.status(status).json(joke || 'Not found');
     });
     
     return app;
