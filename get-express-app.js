@@ -7,9 +7,9 @@ const defaultConfig = {
 };
 
 const getRandomNumber = (maxValue, excludedNumbers) =>{
-    const randomNumber = Math.round(Math.random() * Number.MAX_SAFE_INTEGER) % maxValue;
+    let randomNumber = Math.round(Math.random() * Number.MAX_SAFE_INTEGER) % maxValue;
 	while(excludedNumbers.indexOf(randomNumber) > -1) {
-		randomNumber = (randomNumber + 1) % jokes.length;
+		randomNumber = (randomNumber + 1) % maxValue;
     }
     return randomNumber;
 }
