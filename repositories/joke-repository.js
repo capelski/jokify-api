@@ -742,7 +742,8 @@ const count = () => jokes.length;
 
 const getAll = filter => {
 	const parsedFilter = parseSearchText(filter);
-	return jokes.filter(joke => parseSearchText(joke.text).indexOf(parsedFilter) > -1);
+	return jokes.filter(joke => 
+		joke.text.find(paragraph => parseSearchText(paragraph).indexOf(parsedFilter) > -1));
 };
 
 const getByIndex = index => jokes[index];
