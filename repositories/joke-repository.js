@@ -126,7 +126,7 @@ const source = [
 
 	['- ¿Te parece bonito?',
 	'- Sí',
-	'- Pues es rodaballo<br />'],
+	'- Pues es rodaballo'],
 
 	['- Entonces, doctor, ¿con este condón de lana se curará mi impotencia?',
 	'- No, pero le sudará la polla'],
@@ -171,7 +171,7 @@ const source = [
 	['- Cariño, ¿me pasas el bebé?',
 	'- Ahora, cuando llore',
 	'- ¿Cuando llore? ¿Porque?',
-	'- Porque no me acuerdo de donde lo he dejado<br />'],
+	'- Porque no me acuerdo de donde lo he dejado'],
 
 	['- Siento decirle que mi gato ha matado a su perro',
 	'- ¿Mi perro? ¡Pero si es un doberman!',
@@ -182,7 +182,7 @@ const source = [
 
 	['Ojo a cómo puede cambiar una frase con poner la coma o no ponerla:',
 	'- Quiero que me ayude, señorita',
-	'- Quiero que me la coma, señorita<br />'],
+	'- Quiero que me la coma, señorita'],
 
 	['- Cuando voy a donar sangre, no me la extraigo yo. Lo hace una enfermera',
 	'- Ya pero esto es un banco de sémen',
@@ -210,7 +210,7 @@ const source = [
 	['- Cariño, ¿has visto a Gasol coger el rebote?',
 	'- ¿Qué rebote?',
 	'- El de mis huevos en tu cogote Jajajaja Hoy no follo, ¿verdad?',
-	'- Ni mañana<br />'],
+	'- Ni mañana'],
 
 	['- No eres tú, soy yo',
 	'- Eso es que has activado la cámara frontal del móvil',
@@ -510,7 +510,7 @@ const source = [
 	'- Que me despierto a las 9'],
 
 	['- Papa, papa, tengo paperas',
-	'- Pues cuando tengas pa putas me avisas<br />'],
+	'- Pues cuando tengas pa putas me avisas'],
 
 	['¿Que son tres burros debajo del mar? Un triburrón'],
 
@@ -526,9 +526,9 @@ const source = [
 	['- Que boca mas grande tienes abuelita',
 	'- ¡Cinco pollas me caben!'],
 
-	['- ¿Tu no eras alérgico a los frutos secos?<br/>' +
-	'- Si, ¿porque?<br/>' +
-	'- Porque la tia con la que te liaste anoche tenia nuez<br/>' +
+	['- ¿Tu no eras alérgico a los frutos secos?',
+	'- Si, ¿porque?',
+	'- Porque la tia con la que te liaste anoche tenia nuez',
 	'- ¡Ahora entiendo porque me pica el culo!'],
 
 	['Una cereza se mira al espejo y se pregunta \'¿Seré esa?\''],
@@ -641,7 +641,7 @@ const source = [
 	['- ¿Cómo te llamas?',
 	'- No soy ni el ayer ni el mañana',
 	'- ¿Qué coño dices?',
-	'- Soy Eloy<br />'],
+	'- Soy Eloy'],
 
 	['- No eres tú, es tu ortografía',
 	'- Entonces, ¿ya no nos vamos haber?'],
