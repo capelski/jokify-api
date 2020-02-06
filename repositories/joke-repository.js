@@ -621,7 +621,7 @@ const source = [
 	'¿La cigüena? Joder papá, si es que te follas todo lo que pillas'],
 
 	['Cariño, te detienes mucho en los detalles y así pierdes la visión de conjunto',
-	'Pero es que el niño es negro<br/>' +
+	'Pero es que el niño es negro',
 	'Y dale...'],
 
 	['Las mujeres que os quejáis de los dolores del parto deberíais probar lo que es ser hombre y tener 37 de fiebre'],
