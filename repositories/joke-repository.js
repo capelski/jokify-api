@@ -6,16 +6,16 @@ const source = [
 
 	['La noche de bodas, el novio encuentra a la novia en la cama con un enano', 
 	'¿Y ese quién es?',
-	'El aperitivo!'],
+	'¡El aperitivo!'],
 
 	['Un hombre llega a casa y se encuentra a su mujer en la cama con otro',
 	'¿Y ese quién es?',
 	'Ése es quien paga el piso, la luz, la comida, el colegio de las niñas, ...',
-	'Tápalo, tápalo! Que no se resfrie!'],
+	'¡Tápalo, tápalo! ¡Que no se resfrie!'],
 
 	['Oye, ¿tu mujer a que se dedica?',
 	'Mi mujer es jinete de aves de corral',
-	'Hostia, ¿Y eso que es?',
+	'Hostia, ¿y eso que es?',
 	'Que cada dos por tres me monta un pollo'],
 
 	['¿Tienes hijos?',
@@ -233,7 +233,7 @@ const source = [
 	'Ponte las gafas, Paco',
 	'Hóstia qué movida...'],
 
-	['Manolo, ¿cuál es la postura que más has usado para practicar sexo?',
+	['¿Cuál es la postura que más has usado para practicar sexo?',
 	'De rodillas y pidiéndolo por favor'],
 
 	['Hola. Soy el vecino de arriba',
@@ -460,7 +460,7 @@ const source = [
 	'Es estaño',
 	'¿A que si?'],
 
-	['Explota una fábrica de pelucas en Murcia. La policia está peninando la zona'],
+	['Explota una fábrica de pelucas en Murcia. La policia está peinando la zona'],
 
 	['Muere un hombre al estrellarse con un espejo. Se veía venir'],
 
@@ -591,9 +591,9 @@ const source = [
 	'¡Empezad ya, hostias!'],
 
 	['¿Hay algún doctor en la sala?',
-	'Presente! Especializado en Matemáticas',
-	'¡Rápido doctor, mi amigo se se muere!',
-	'Pues uno menos'],
+	'¡Presente! Especializado en matemáticas',
+	'¡Rápido doctor, mi amigo se muere!',
+	'Entonces uno menos'],
 
 	['¿Cómo se dice Un zapato en inglés?',
 	'A shoe',
@@ -703,7 +703,7 @@ const source = [
 	'¿Es grave?',
 	'No, señora, es esdrújula'],
 
-	['Mi noiva me ha pedido tiempo y distancia. Creo que quiere calcular la velocidad'],
+	['Mi novia me ha pedido tiempo y distancia. Creo que quiere calcular la velocidad'],
 
 	['Quisiera comprar los libros sobre la fatiga y el cansancio',
 	'Lo siento, están agotados'],
