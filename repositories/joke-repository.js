@@ -730,7 +730,18 @@ const source = [
 
 	['¿Sabes en qué se convierte un pájaro cuando lo aplastas?',
 	'Ni idea',
-	'En una avellana']
+	'En una avellana'],
+
+	['Oye ¿te das cuenta de que solo piensas en comer?',
+	'¿A qué te refieres croquetamente?'],
+
+	['Vivimos en una sociedad demasiado competitiva. Lo importante es ser feliz',
+	'¿Tú eres feliz?',
+	'Sí',
+	'Pues yo más'],
+
+	['¿Qué vas a hacer en San Valentín?',
+	'Ir a un restaurante romántico. Con los niños, a dar por culo a los enamorados']
 ];
 
 const jokes = source.map((text, index) => ({
