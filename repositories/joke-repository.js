@@ -556,7 +556,7 @@ const source = [
 	'Que es imposible. Si te mueres, te mueres'],
 
 	['Estas obsesionado con las especias',
-	'No digas tonerías, Romero',
+	'No digas tonterías, Romero',
 	'Ramiro',
 	'Eso'],
 
@@ -599,15 +599,15 @@ const source = [
 	'A shoe',
 	'Salud Jajaja'],
 
-	['¿Balias, guapo?',
+	['¿Bailas, guapo?',
 	'No',
 	'Perfecto. Sujétame el cubata que esto es un temazo'],
 
 	['La rencarnación tiene que existir, porque ciertos niveles de retraso no se acumulan en una sola vida ni de coña'],
 
-	['Mi mujer insiste en que use la escobilla del vater, pero voy a volver al papel, tengo el culo en carne vive'],
+	['Mi mujer insiste en que use la escobilla del vater, pero voy a volver al papel, tengo el culo en carne viva'],
 
-	['Después del divorcio hemos dividio la casa en dos partes',
+	['Después del divorcio hemos dividido la casa en dos partes',
 	'¿Y qué parte te ha tocado?',
 	'La de fuera'],
 
@@ -618,7 +618,7 @@ const source = [
 	'Creo que tiene usted unos ojos preciosos'],
 
 	['Hijo, la cigüeña te va a traer un hermanito',
-	'¿La cigüena? Joder papá, si es que te follas todo lo que pillas'],
+	'¿La cigüeña? Joder papá, si es que te follas todo lo que pillas'],
 
 	['Cariño, te detienes mucho en los detalles y así pierdes la visión de conjunto',
 	'Pero es que el niño es negro',
@@ -633,7 +633,7 @@ const source = [
 	['¿Nivel de ortografia?',
 	'Excelente',
 	'Mencione dos palabras con tilde',
-	'Matilde y Cleotilde',
+	'Matilde y Clotilde',
 	'¡Contratado!'],
 
 	['Si la raja del culo fuera horizontal daríamos palmadas al subir las escaleras'],
@@ -662,7 +662,7 @@ const source = [
 	'¿Cómo el tio Jorge?',
 	'No, el tio Jorge es Drag Queen'],
 
-	['Si crees que estás mal recuerda que puede haber alguien conociendo a tu ex y pensando que ha triumfado'],
+	['Si crees que estás mal recuerda que puede haber alguien conociendo a tu ex y pensando que ha triunfado'],
 
 	['No sé porqué dices que soy infantil',
 	'Porque me tienes desnuda en la cama y me estás coloreando el tatuaje',
@@ -718,7 +718,7 @@ const source = [
 
 	['¿Sabes qué pasa cuando se va la luz en una escuela privada?',
 	'Ni idea',
-	'Que no se vee un pijo'],
+	'Que no se ve un pijo'],
 
 	['¿Sabes qué es un pelo en una cama?',
 	'Ni idea',
