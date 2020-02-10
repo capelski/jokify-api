@@ -41,7 +41,7 @@ const source = [
 	'Es mi madre',
 	'No, digo la de al lado',
 	'Esa es mi hermana',
-	'Pues pégame dos hostias q esto ya no hay quien lo arregle'],
+	'Pues pégame dos hostias que esto ya no hay quien lo arregle'],
 
 	['Nunca me escuchas',
 	'Y yo a ti'],
