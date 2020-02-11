@@ -13,6 +13,15 @@ const getRandomNumber = (maxValue, excludedNumbers) =>{
     }
     return randomNumber;
 }
+
+const getAlreadyServedJoke = (session, filter, filteredJokes) => {
+    const searches = session.searches = session.searches || {};
+    searches[filter] = searches[filter] && (searches[filter].length < filteredJokes.length) && searches[filter] || [];
+    const joke = filteredJokes.find(j => searches[filter].indexOf(j.id) === -1);
+    searches[filter].push(joke.id);
+    return joke;
+}
+
 const jokesCount = jokesRepository.count();
 
 module.exports = (environmentConfig = {}) => {
@@ -47,7 +56,8 @@ module.exports = (environmentConfig = {}) => {
         }
         else if (filter) {
             const filteredJokes = jokesRepository.getAll(filter);
-            joke = filteredJokes.find(j => excludedIndexes.indexOf(j.id) === -1);
+            joke = filteredJokes.find(j => excludedIndexes.indexOf(j.id) === -1) ||
+                filteredJokes.length > 0 && getAlreadyServedJoke(req.session, filter, filteredJokes);           
         }
         else {
             const randomId = getRandomNumber(jokesCount, excludedIndexes);
