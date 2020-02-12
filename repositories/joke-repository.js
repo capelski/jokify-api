@@ -1,8 +1,8 @@
 const source = [
-	['Como maldice un pollo a otro pollo? Caldito seas!'],
+	['¿Cómo maldice un pollo a otro pollo? ¡Caldito seas!'],
 
-	['Cariño, pronto sera nuestro aniversario. Que me vas a regalar?',
-	'Ves ese coche aparcado? Pues una liquadora del mismo color'],
+	['Cariño, pronto sera nuestro aniversario. ¿Que me vas a regalar?',
+	'¿Ves ese coche aparcado? Pues una liquadora del mismo color'],
 
 	['La noche de bodas, el novio encuentra a la novia en la cama con un enano', 
 	'¿Y ese quién es?',
@@ -67,9 +67,9 @@ const source = [
 	'¿Qué te apetece, Paco? ¿Pizza?',
 	'Creo que no me has entendido'],
 
-	['Estás más delgada, no?',
+	['Estás más delgada, ¿no?',
 	'Es que el negro me adelgaza...',
-	'Pero si vas de rojo!',
+	'¡Pero si vas de rojo!',
 	'Creo que no me has entendido'],
 
 	['A mi se me conquista con una buena comida',
@@ -250,7 +250,7 @@ const source = [
 
 	['Dicen que el chocolate es un sustituivo del sexo. He metido la polla en una taza de Paladin y estoy camino de urgencias...'],
 
-	['¿Cómo dejáis que vuestra madre os siga vestiendo iguales? Que tenéis bigote y pelos en los huevos, joder! Que ya tenéis una edad!',
+	['¿Cómo dejáis que vuestra madre os siga vestiendo iguales? ¡Que tenéis bigote y pelos en los huevos, joder! ¡Que ya tenéis una edad!',
 	'Caballero, baje del coche y sople aquí por favor'],
 
 	['¿Cómo te reconoceré?',
@@ -274,7 +274,7 @@ const source = [
 	['En una escala del 1 al 10, ¿cómo valoraria su capacidad de comprensión?',
 	'Muy buena'],
 
-	['No hay ni un pelo en tu camisa!',
+	['¡No hay ni un pelo en tu camisa!',
 	'¿Y...?',
 	'¿Quien es esa puta calva?'],
 
@@ -282,7 +282,7 @@ const source = [
 	'¿Ha probado usted a quitar el CD de Pablo Alborán?'],
 
 	['¿Tiene tarjetas de San Valentín que digan: "Para mi único y verdadero amor"?',
-	'Claro que tenemos!',
+	'¡Claro que tenemos!',
 	'Pués deme ocho por favor'],
 
 	['¿A partir de cuántas cervezas se puede considerar que tienes un problema?',
@@ -379,7 +379,7 @@ const source = [
 
 	['Señor, no queda viagra de 50mg. Le vamos a dar de 100mg para que la parta en dos',
 	'¡¿A mi esposa?!',
-	'No, coño! La pastilla!'],
+	'¡No, coño! ¡La pastilla!'],
 
 	['Vengo a matricularme a Ciencias Políticas',
 	'Muy bien. Coja este sobre...',
@@ -485,7 +485,7 @@ const source = [
 	['Tengo menos ganas de currar que el que le puso el nombre a "Panrico"'],
 
 	['Te quiero mucho Soplaculo',
-	'Abuelaaaa! Me llamo Silvano!'],
+	'¡Abuelaaaa! ¡Me llamo Silvano!'],
 
 	['Lo más jodido de trabajar en equipo es convencer al resto de que no tienen ni puta idea'],
 
@@ -495,7 +495,7 @@ const source = [
 
 	['Gracias a la bascula en el baño puedo saber cuanto pesa lo que cago',
 	'Claro, te pesas antes y despues',
-	'Ah! De esa forma es mejor'],
+	'¡Ah! De esa forma es mejor'],
 
 	['¿Cómo se dice, fuera o fuese?',
 	'Da igual',
@@ -517,7 +517,7 @@ const source = [
 	['¡Ayúdeme! He perdido a mi hija',
 	'¿Como se llama?',
 	'Esperanza',
-	'Eso es imposible! La esperanza es lo último que se pierde'],
+	'¡Eso es imposible! La esperanza es lo último que se pierde'],
 
 	['Soy rockero',
 	'¿Y tienes una banda?',
@@ -538,7 +538,7 @@ const source = [
 	['¿Sabe cómo se dice memoria en inglés?',
 	'Por supuesto. Memory',
 	'¿Podria usarlo en una frase?',
-	'Claro! Ayer caí por la ventana y memory'],
+	'¡Claro! Ayer caí por la ventana y memory'],
 
 	['¿Qué es un tomate vestido con capa y antifaz?',
 	'Ni idea',
@@ -548,7 +548,7 @@ const source = [
 
 	['Cariño, cuéntale a mi madre lo que te hice ayer',
 	'¿Lo de la espectacular mamada sin manos?',
-	'No! El arroz con leche, gilipollas'],
+	'¡No! El arroz con leche, gilipollas'],
 
 	['Dice que sabe de historia del arte',
 	'Soy un experto',
@@ -570,7 +570,7 @@ const source = [
 	['¿Sabe cómo se dice fiesta en inglés?',
 	'Por supuesto. Party',
 	'¿Podria usarlo en una frase?',
-	'Claro! Ayer me party los dientes con la bicicleta'],
+	'¡Claro! Ayer me party los dientes con la bicicleta'],
 
 	['Mama, ¿porqué me llamo Claudio?',
 	'Por qué yo me llamo Claudia',
@@ -681,7 +681,7 @@ const source = [
 	'Entiendo'],
 
 	['Me siento solo',
-	'Yo también! Sentarse es fácil'],
+	'¡Yo también! Sentarse es fácil'],
 
 	['Entonces, ¿vendes el piso?',
 	'Alquilo',
