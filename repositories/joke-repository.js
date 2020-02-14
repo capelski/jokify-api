@@ -741,7 +741,19 @@ const source = [
 	'Pues yo más'],
 
 	['¿Qué vas a hacer en San Valentín?',
-	'Ir a un restaurante romántico. Con los niños, a dar por culo a los enamorados']
+	'Ir a un restaurante romántico. Con los niños, a dar por culo a los enamorados'],
+
+	['Si te duele la barriga, té con limón',
+	'Si te duele la garganta, té con miel',
+	'Si te duele el culo, te con vencieron'],
+
+	['A ver si me muero un día de estos',
+	'Tienes que ser más optimista',
+	'A ver si me muero hoy'],
+
+	['Los resultados de su examen visual son muy malos',
+	'Puedo verlos',
+	'No creo']
 ];
 
 const jokes = source.map((text, index) => ({
