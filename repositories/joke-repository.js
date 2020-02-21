@@ -683,7 +683,10 @@ const source = [
         'Si te duele el culo, te con vencieron'
     ],
     ['A ver si me muero un día de estos', 'Tienes que ser más optimista', 'A ver si me muero hoy'],
-    ['Los resultados de su examen visual son muy malos', 'Puedo verlos', 'No creo']
+    ['Los resultados de su examen visual son muy malos', 'Puedo verlos', 'No creo'],
+    ['"Si no te gusta mi entrecejo, no esperes ver mi conejo"<br /><br />Frida Kahlo'],
+    ['Yo me masturbo desnudo, y a quién no le guste, que se vaya a otro Mercadona'],
+    ['Me sorprende que hayamos cabido todos en la foto, Asterix', 'Es que la sacó Panoramix']
 ];
 
 const jokes = source.map((text, index) => ({
