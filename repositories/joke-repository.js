@@ -686,7 +686,22 @@ const source = [
     ['Los resultados de su examen visual son muy malos', 'Puedo verlos', 'No creo'],
     ['"Si no te gusta mi entrecejo, no esperes ver mi conejo"<br /><br />Frida Kahlo'],
     ['Yo me masturbo desnudo, y a quién no le guste, que se vaya a otro Mercadona'],
-    ['Me sorprende que hayamos cabido todos en la foto, Asterix', 'Es que la sacó Panoramix']
+    ['Me sorprende que hayamos cabido todos en la foto, Asterix', 'Es que la sacó Panoramix'],
+    [
+        'Me dijiste que ibas a ser amable con mi novio, papá',
+        'Bueno. ¡A VER SI EN ESTA CASA NO SE VA A PODER LIMPIAR UNA ESCOPETA DURANTE LA CENA!'
+    ],
+    [
+        'Me compré unos preservativos ultrasensibles',
+        '¿Qué tal son?',
+        'Ahí están, en el cajón, llorando porque no los uso'
+    ],
+    ['Hijo, creo que va siendo hora que hablemos de sexo', 'Claro papá. ¿Qué quieres saber?'],
+    [
+        'He ahorrado 1000€ para irme a Londres',
+        'Allí sólo aceptan libras',
+        'Entonces no podré ir. Yo soy Géminis'
+    ]
 ];
 
 const jokes = source.map((text, index) => ({
