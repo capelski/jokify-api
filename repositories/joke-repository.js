@@ -701,7 +701,8 @@ const source = [
         'He ahorrado 1000€ para irme a Londres',
         'Allí sólo aceptan libras',
         'Entonces no podré ir. Yo soy Géminis'
-    ]
+    ],
+    ['Cariño, estás obsesionado con el sexo anal', '¡Ojete con lo que dices!']
 ];
 
 const jokes = source.map((text, index) => ({
