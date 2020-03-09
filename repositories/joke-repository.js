@@ -702,7 +702,14 @@ const source = [
         'Allí sólo aceptan libras',
         'Entonces no podré ir. Yo soy Géminis'
     ],
-    ['Cariño, estás obsesionado con el sexo anal', '¡Ojete con lo que dices!']
+    ['Cariño, estás obsesionado con el sexo anal', '¡Ojete con lo que dices!'],
+    [
+        '¿El club de los indecisos?',
+        'Tercera planta. Por cualquiera de los dos ascensores',
+        'No me haga esto, por favor'
+    ],
+    ['Vengo del homeópata. Me ha quitado lo que tenía', '¿Qué tenías?', '150€'],
+    ['Me gusta estar solo', 'Cómo te entiendo', 'Pero aquí sigues']
 ];
 
 const jokes = source.map((text, index) => ({
