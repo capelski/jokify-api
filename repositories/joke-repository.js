@@ -709,7 +709,47 @@ const source = [
         'No me haga esto, por favor'
     ],
     ['Vengo del homeópata. Me ha quitado lo que tenía', '¿Qué tenías?', '150€'],
-    ['Me gusta estar solo', 'Cómo te entiendo', 'Pero aquí sigues']
+    ['Me gusta estar solo', 'Cómo te entiendo', 'Pero aquí sigues'],
+    [
+        '¿Sabes que tanto en sueco como en finlandés, calzoncillos se dice igual? ',
+        '¿Ah si? ¿Cómo?',
+        'Escondinabo'
+    ],
+    ['¿Sabes porqué en el mar hay tanta espuma?', '¿Por qué?', 'Porque la Sirenita es Ariel'],
+    ['Los médicos aconsejan abanicarse con un serrucho porque el aire de la sierra es mas fresco'],
+    ['Los astronautas han reconocido que nunca van a tener novia. Claro, necesitan su espacio'],
+    [
+        'El gobierno ha aconsejado abrir la nevera muy despacio y sin hacer ruido',
+        '¿Por qué?',
+        'Porque que el zumo está concentrado'
+    ],
+    [
+        'Me ha parado un policia y me ha dicho "papeles". Yo le he dicho "tijeras", con lo que he ganado y me he ido. Ahora lleva 45 minutos detrás mio y creo que quiere la revancha'
+    ],
+    ['Cariño, ya te encontré el punto G', '¿Ah si?', 'Si. Lo tenía tu hermana'],
+    [
+        '¿Por que lloras cariño?',
+        'Porque me han quitado la nocilla de los niños',
+        'Querrás decir la tutela'
+    ],
+    ['Paco, la lavadora se ha calcificado', '¿Para la final?'],
+    ['Paco, la cisterna pierde', 'Pues dile que lo importante es participar'],
+    [
+        'Confundo los números con los colores, doctor',
+        'Pues esto es un buen marrón',
+        '¡Por el culo te la hinco!'
+    ],
+    [
+        '¿Los bomberos? ¡Mi casa se está quemando! ¿Vienen ustedes o voy yo para allá?',
+        '¡¿Pero como a venir usted!?',
+        'Es que vivo en una autocaravana'
+    ],
+    ['Si tengo una gallina y la meto en una sauna, ¿se puede decir que me suda la polla?'],
+    ['¿Alguna vez has entrado en un laberinto?', 'No', 'Pues no sabes lo que te pierdes'],
+    [
+        'Sara, ¿tu cómo llevas que tu novio tenga la polla tan gorda?',
+        'Por un lado bien, pero por el otro...'
+    ]
 ];
 
 const jokes = source.map((text, index) => ({
