@@ -749,6 +749,167 @@ const source = [
     [
         'Sara, ¿tu cómo llevas que tu novio tenga la polla tan gorda?',
         'Por un lado bien, pero por el otro...'
+    ],
+    ['¿Capital de España?', 'La mayor parte en Suiza'],
+    ['¿De qué signo es tu mujer?', 'Debe ser de  exclamación, porque se pasa el día gritándome...'],
+    ['¿Me pone un zumo de piña?', '¿Natural?', 'De Pontevedra, pero no creo que eso importe'],
+    [
+        'Camarero, ponga una de calamares a la rumana',
+        'Perdón señor, será a la romana',
+        'Irina, cariño, dile al gilipollas éste de dónde eres'
+    ],
+    [
+        '¿La aceptas como esposa en la salud, en la enfermedad, en la riqueza y en la pobreza hasta que la muerte os separe?',
+        'Si, no, si, no, no'
+    ],
+    ['Siempre que mis padres me decían "estudia" yo entendía "es tu día", y salía de copas'],
+    ['Tengo 3 llamadas perdidas de mi oftalmólogo. El de ver me llama'],
+    ['Shhhhh', 'Shhhhht', 'Shhhhh', 'Shhhhht', '(Discusión entre una cobra y una bibliotecaria.)'],
+    [
+        '¿Es grave Doctor?',
+        '¿Ha oído ese refrán que dice que lo que no mata engorda?',
+        'Sí',
+        'Pues ha debido comer alguna cosa que no engorda'
+    ],
+    [
+        'Hola, ¿es aquí el club de imbéciles?',
+        'Sí, pero... ¿qué hace con todo ese estiércol?',
+        'Vengo a abonarme',
+        'Dios santo, pase, será el líder'
+    ],
+    [
+        'Dame una rebanadita de pastel, pero chiquitita, que estoy a dieta',
+        '¿Así, como las otras siete?',
+        'Sí, porfa'
+    ],
+    [
+        'No te das cuenta pero ¡TE TENGO EN EL BOTE!',
+        '¡Deja de decir gilipolleces y REMA! ¡Subnormal!'
+    ],
+    ['Yo soy ateo', 'Yo anolo, ucho gusto', 'El gusto es ío'],
+    ['Perdone, ¿es este el ascensor de subida?', 'No, he montado en otros mejores'],
+    ['Perdone, pero vamos a proceder al derribo del edificio contiguo', '¿Conmiguo?'],
+    [
+        '¿Te gustan más los Beatles o los Stones?',
+        'A mí me gustan los Doors',
+        'Tienes que elegir uno'
+    ],
+    [
+        'Doctor, estoy fatal... veo elefantes azules por todos los rincones',
+        '¿Ya ha visto usted a algún psiquiatra?',
+        'No, de momento sólo elefantes'
+    ],
+    [
+        'Hola, quería estos zapatos',
+        'Dígame su número',
+        'Oh! 651862...',
+        'No! Número de zapatos!',
+        'Ah! Quiero 2',
+        'Por favor, atiende tú a la rubia'
+    ],
+    [
+        'Ha dicho el doctor que lo mejor para curarme el dolor de garganta es un striptease',
+        'Un Strepsils',
+        'Joder, Paqui, le quitas la ilusión a cualquiera...'
+    ],
+    [
+        'Houston, aquí Apolo, ¿me recibe?',
+        '¿Apolo qué?',
+        '¡Coño, el Apolo 13!',
+        'Agárramela que me crece jajaja',
+        'No, si al final nos va a pasar algo'
+    ],
+    [
+        '¡Qué maravilla el cuadro que tienes colgado en esa pared!',
+        'Es un Murillo',
+        'Pues en ese murillo'
+    ],
+    [
+        'Papá, ¿qué es la droga?',
+        'Algo que te hace la vida imposible y una vez que empiezas no puedes dejarlo',
+        '¿Como mamá?',
+        '¡Ven que te abrace, hijo!'
+    ],
+    [
+        'Cari, baja al súper y compra tampones, que se me han acabado',
+        '¿Con o sin alas?',
+        'Ya bajo yo'
+    ],
+    [
+        '¿Qué tal lo de tu adicción al sexo?',
+        'Te hice caso, me puse en manos de profesionales',
+        'Claro, hay psicólogos muy buenos',
+        'Creo que no me has entendido'
+    ],
+    [
+        'Carmen, no te quiero presionar pero necesito una respuesta AHORA, ¿él o yo?',
+        'Él',
+        '¡Te doy 2 días más!'
+    ],
+    ['Un placer venir a su mutua', 'Es mutuo', 'Un placer venir a su mutuo'],
+    [
+        'Papá, ¿me ayudas con el examen de filosofia?',
+        'Claro',
+        '¿De dónde venimos?',
+        'Del Carrefú',
+        '¿Es muy caro un profesor particular?'
+    ],
+    ['¿Te gusta la música clásica?', 'Me encanta', '¿De Verdi?', '¡Te lo juri!'],
+    ['¿Cuántas horas dura tu jornada laboral?', 'Ocho', '¿Computadas?', 'Con putadas, onze'],
+    [
+        'Oiga, ¿el otorrino va por número?',
+        'Van nombrando',
+        'Qué gran actor, pero no me cambie de tema'
+    ],
+    ['¡Qué gordas y feas son tus hijas!', '¡¿Cómo osas?!', 'Exacto'],
+    [
+        'Tengo unos informes que dicen que puede volver un grupo terrorista de hace años',
+        '¿Los GRAPO?',
+        'No, déjalos así, ya lo hará la secretaria'
+    ],
+    [
+        'Papá, ¿qué es el bullying?',
+        'Era el restaurante de Ferran Adrià',
+        'Pues en el cole hay carteles de "NO AL BULLYING"',
+        'Pues igual por eso ha cerrado'
+    ],
+    [
+        'Mi Paco aprendió a conducir autobuses por sí solo',
+        '¿Ah! Es autodidacta?',
+        'No, no, es autobusero'
+    ],
+    [
+        '¿Se quedará a dormir?',
+        'Sí',
+        'Quizá debería saber que la casa está encantada',
+        'Ah, pues dígale que a mí también me hace ilusión quedarme'
+    ],
+    [
+        '¡Qué bien nadas! ¿Puedes imitar a una sirena?',
+        '¡PIRUBÍ, PIRUBÍ, NINO, NINO, NINO, PIRUBÍ, PIRUBÍ!',
+        'Menos mal que eres guapa'
+    ],
+    [
+        'Mi sargento, ya están colocados los pivotes para el control',
+        'Conos',
+        'Mo sorgonto, yo ostón colocodos los povotos poro ol control'
+    ],
+    [
+        'Mi papá hizo la escuela primaria y la secundaria',
+        '¿Y la universidad?',
+        'No, ahí contrataron a otro albañil'
+    ],
+    [
+        'Mi mujer quiso salir a la cubierta del yate y se golpeó con la ventana',
+        'Escotilla',
+        'Muchísimo y además torpe que te cagas'
+    ],
+    [
+        'Tú traes las birras, tú ginebra, tú Fanta, tú algo de papeo...',
+        '¿Y yo?',
+        'Tú ron',
+        '¿De Suchard?',
+        'Mejor no vengas'
     ]
 ];
 
