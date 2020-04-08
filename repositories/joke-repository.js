@@ -910,7 +910,8 @@ const source = [
         'Tú ron',
         '¿De Suchard?',
         'Mejor no vengas'
-    ]
+    ],
+    ['Dime algo con amor', 'Amortiguador']
 ];
 
 const jokes = source.map((text, index) => ({
