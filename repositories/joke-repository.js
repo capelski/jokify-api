@@ -911,7 +911,15 @@ const source = [
         '¿De Suchard?',
         'Mejor no vengas'
     ],
-    ['Dime algo con amor', 'Amortiguador']
+    ['Dime algo con amor', 'Amortiguador'],
+    ['Más confuso que un romano mirando el letrero de un LIDL'],
+    ['Soy celíaca', 'Encantado, yo Antoniaco'],
+    [
+        'El sarcasmo no te lleva a ninguna parte',
+        'Bueno, a mi me llevo al campeonato mundial de sarcasmo de 1998 en Perú',
+        '¡Ostras! ¿De verdad?',
+        'No'
+    ]
 ];
 
 const jokes = source.map((text, index) => ({
