@@ -919,6 +919,12 @@ const source = [
         'Bueno, a mi me llevo al campeonato mundial de sarcasmo de 1998 en Perú',
         '¡Ostras! ¿De verdad?',
         'No'
+    ],
+    ['No soy feo. Soy guapo asintomático'],
+    [
+        '¡He encontrado empleo!',
+        '¡No me jodas! ¿Dónde?',
+        'En el diccionario, entre la D y la F. ¿Lo ves? Aquí está'
     ]
 ];
 
