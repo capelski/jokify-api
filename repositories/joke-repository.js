@@ -501,7 +501,7 @@ const source = [
     ],
     ["Una cereza se mira al espejo y se pregunta '¿Seré esa?'"],
     [
-        "Me dice el otro dia un tipo por la calle '¡Quiero un hijo tuyo!' Le traje al mayor, que es el que come más"
+        "Me dice el otro dia un tipo por la calle '¡Quiero un hijo tuyo!'. Le traje al mayor, que es el que come más"
     ],
     [
         '¿Sabe cómo se dice memoria en inglés?',
@@ -931,6 +931,51 @@ const source = [
     ],
     [
         'La profesora de música de mi hijo, en pleno confinamiento, ha enviado nuevas partituras para ensayar con la flauta. Ni olvido ni perdón'
+    ],
+    ['Tu mascota es preciosa. ¿Araña?', 'No, gato'],
+    [
+        'Ya es la cuarta vez que te sirves tarta y helado. ¿No te da vergüenza?',
+        '¿Y por qué iba a darme? Cada vez digo que es para ti'
+    ],
+    ['¿No hay otro billete de tren más barato?', 'Si, señor, pero tendría que llevar bozal'],
+    [
+        'Oye hijo, ¿dónde está tu madre?',
+        'Arreglando el jardín',
+        'Pues ya no es tan joven, ¿sabes? Podrías dejar la televisión y ayudarla',
+        'Es que la otra pala la tiene la abuela, que está con ella'
+    ],
+    ['¿Es aquí el concurso de vagos?', 'Si señor, puede usted pasar', 'No no! A mí que me entren'],
+    ['Papá, ¿dónde están los Alpes?', 'Pregúntale a tu madre, que es quién lo guarda todo'],
+    [
+        'A ver hijo, repasemos las divisiones. Si te doy 6€ para repartirlos con tu hermanito, ¿Cuántos le tocan a él?',
+        'Dos',
+        '¿Pero es que no has aprendido nada?',
+        'Claro que sí, el que no ha aprendido es él'
+    ],
+    ['¡Buenos días señorita! ¿Cuánto tarda el tren a Sevilla?', 'Un momento', 'Estupendo'],
+    [
+        '¿Te has ido a Nueva York a comprar una tele?',
+        'Es que me gustan mucho más los programas americanos'
+    ],
+    [
+        'Entonces, ¿que problema tiene con la nariz y los oídos?',
+        'Que me molestan cada vez que me quito la camiseta, doctor',
+        'Salga de mi consulta, por favor'
+    ],
+    [
+        '¿Por qué bebes la cerveza con pajita?',
+        'Porqué le prometí a mi madre que jamás pondría los labios en una copa'
+    ],
+    ['¿Por qué no te apuntas a una escuela de tartamudos?', '¿Para qué? ¡Si tartamudeo muy bien!'],
+    [
+        '¿Por qué corren tanto los atletas, papá?',
+        'Porque al primero le dan un premio',
+        'Y los demás entonces, ¿para qué corren?'
+    ],
+    [
+        'Voy a fumarme un cigarrillo',
+        'Oye, ¿te quedan más?',
+        'Espera que lo miro. No, me quedan menos'
     ]
 ];
 
