@@ -66,7 +66,9 @@ module.exports = (environmentConfig = {}) => {
 
         let joke;
 
-        if (id) {
+        if (id === 'last') {
+            joke = jokesRepository.getLatest();
+        } else if (id) {
             joke = jokesRepository.getByIndex(parseInt(id, 10));
         } else if (filter) {
             const filteredJokes = jokesRepository.getAll(filter);

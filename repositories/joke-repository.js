@@ -1004,8 +1004,11 @@ const getAll = filter => {
 
 const getByIndex = index => jokes[index];
 
+const getLatest = () => jokes[jokes.length - 1];
+
 module.exports = {
     count,
+    getAll,
     getByIndex,
-    getAll
+    getLatest
 };
