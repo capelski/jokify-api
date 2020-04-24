@@ -66,8 +66,10 @@ module.exports = (environmentConfig = {}) => {
 
         let joke;
 
-        if (id === 'last') {
-            joke = jokesRepository.getLatest();
+        if (id === 'newest') {
+            joke = jokesRepository.getNewest();
+        } else if (id === 'oldest') {
+            joke = jokesRepository.getOldest();
         } else if (id) {
             joke = jokesRepository.getByIndex(parseInt(id, 10));
         } else if (filter) {
