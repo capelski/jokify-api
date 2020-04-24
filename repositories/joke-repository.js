@@ -925,6 +925,12 @@ const source = [
         '¡He encontrado empleo!',
         '¡No me jodas! ¿Dónde?',
         'En el diccionario, entre la D y la F. ¿Lo ves? Aquí está'
+    ],
+    [
+        'A un niño de ahora le compras un iPhone y se queja del color... Mi madre me compró por error dos zapatos derechos y estuve un año yendo al cole bailando "la lambada"'
+    ],
+    [
+        'La profesora de música de mi hijo, en pleno confinamiento, ha enviado nuevas partituras para ensayar con la flauta. Ni olvido ni perdón'
     ]
 ];
 
