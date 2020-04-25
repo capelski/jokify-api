@@ -181,7 +181,7 @@ const source = [
         'Borrar el historial'
     ],
     [
-        'Ojo a cómo puede cambiar una frase con poner la coma o no ponerla:',
+        'Ojo a como puede cambiar una frase con poner la coma o no ponerla:',
         'Quiero que me ayude, señorita',
         'Quiero que me la coma, señorita'
     ],
@@ -855,7 +855,7 @@ const source = [
         '¿Es muy caro un profesor particular?'
     ],
     ['¿Te gusta la música clásica?', 'Me encanta', '¿De Verdi?', '¡Te lo juri!'],
-    ['¿Cuántas horas dura tu jornada laboral?', 'Ocho', '¿Computadas?', 'Con putadas, onze'],
+    ['¿Cuántas horas dura tu jornada laboral?', 'Ocho', '¿Computadas?', 'Con putadas, once'],
     [
         'Oiga, ¿el otorrino va por número?',
         'Van nombrando',
@@ -980,7 +980,7 @@ const source = [
 ];
 
 const jokes = source.map((text, index) => ({
-    id: index,
+    id: index + 1,
     text
 }));
 
@@ -1002,7 +1002,7 @@ const getAll = filter => {
     );
 };
 
-const getByIndex = index => jokes[index];
+const getByIndex = index => jokes[index - 1];
 
 const getNewest = () => jokes[jokes.length - 1];
 
