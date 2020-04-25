@@ -70,6 +70,9 @@ module.exports = (environmentConfig = {}) => {
             joke = jokesRepository.getNewest();
         } else if (id === 'oldest') {
             joke = jokesRepository.getOldest();
+        } else if (id === 'random') {
+            const randomId = getRandomNumber(jokesCount, excludedIndexes);
+            joke = jokesRepository.getByIndex(randomId);
         } else if (id) {
             joke = jokesRepository.getByIndex(parseInt(id, 10));
         } else if (filter) {
@@ -78,9 +81,6 @@ module.exports = (environmentConfig = {}) => {
                 filteredJokes.find(j => excludedIndexes.indexOf(j.id) === -1) ||
                 (filteredJokes.length > 0 &&
                     getAlreadyServedJoke(req.session, filter, filteredJokes));
-        } else {
-            const randomId = getRandomNumber(jokesCount, excludedIndexes);
-            joke = jokesRepository.getByIndex(randomId);
         }
 
         if (joke) {
