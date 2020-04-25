@@ -51,7 +51,7 @@ module.exports = (environmentConfig = {}) => {
         })
     );
 
-    app.get('/joke/:id?', (req, res) => {
+    app.get('/joke/:id', (req, res) => {
         if (!req.session.excludedIndexes) {
             req.session.excludedIndexes = [];
         }
@@ -62,7 +62,6 @@ module.exports = (environmentConfig = {}) => {
         }
 
         const { id } = req.params;
-        const { filter } = req.query;
 
         let joke;
 
@@ -73,14 +72,15 @@ module.exports = (environmentConfig = {}) => {
         } else if (id === 'random') {
             const randomId = getRandomNumber(jokesCount, excludedIndexes);
             joke = jokesRepository.getByIndex(randomId);
-        } else if (id) {
-            joke = jokesRepository.getByIndex(parseInt(id, 10));
-        } else if (filter) {
-            const filteredJokes = jokesRepository.getAll(filter);
+        } else if (id === 'filter') {
+            const text = req.query.text || '';
+            const filteredJokes = jokesRepository.getAll(text);
             joke =
                 filteredJokes.find(j => excludedIndexes.indexOf(j.id) === -1) ||
                 (filteredJokes.length > 0 &&
-                    getAlreadyServedJoke(req.session, filter, filteredJokes));
+                    getAlreadyServedJoke(req.session, text, filteredJokes));
+        } else {
+            joke = jokesRepository.getByIndex(parseInt(id, 10));
         }
 
         if (joke) {
