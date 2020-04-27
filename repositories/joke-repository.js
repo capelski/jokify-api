@@ -976,6 +976,34 @@ const source = [
         'Voy a fumarme un cigarrillo',
         'Oye, ¿te quedan más?',
         'Espera que lo miro. No, me quedan menos'
+    ],
+    ['O mueves la ficha o te la como', 'A la mierda el parchís'],
+    ['VENGO DE LA PELUQUERIA', '¿Y porqué me gritas?', 'PORQUE ME HAN DADO VOLUMEN'],
+    ['Vamos a empezar el test de inteligencia. ¿Listo?', 'Sí', 'Pues muy bien, ya está'],
+    ['Me he comprado un coche de los que se conducen solos', '¿Y dónde está?', 'Yo que sé'],
+    ['Retengo líquidos', 'No puede ser', '¡Tú intenta quitarme la cerveza!'],
+    [
+        'He ido a una entrevista de trabajo en El Caserío pero no me han cogido. Ponen demasiados requesitos'
+    ],
+    [
+        'Nos estamos quedando sin ideas para la vacuna contra el virus...',
+        '¿Habéis probado ya con hamburgesas? Tienen carne vacuna. Tiene que funcionar'
+    ],
+    ['¿Montamos ese juego de construcción?', 'Ya si eso Lego'],
+    ['Lo que le fastidiaba a Cervantes era la cosa esa que le puso el veterinario en el cuello'],
+    ['Sócrates, ¿qué dieta hacía tu mujer cuando estaba tan delgada?', 'Sólo sé que no cenaba'],
+    ['¿Tiene algún libro de misterio?', 'A lo mejor...'],
+    [
+        'Ayer le comí el coño a mi novia hasta llegar al latín',
+        '¿Hasta dónde?',
+        'Hasta la lengua muerta'
+    ],
+    ['¿De qué ha muerto, doctor?', 'Fallo multiorgánico', '!Qué hijaputa! Y conmigo los fingía'],
+    [
+        'No aguantes nada. ¿Y tu eres el hombre de acero?',
+        'No me entendiste bien. Soy el hombre da cero',
+        '¿Y cuál es tu super poder entonces?',
+        'Siempre doy negativo en los controles de alcoholemia'
     ]
 ];
 
