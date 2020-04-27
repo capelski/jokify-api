@@ -1000,7 +1000,7 @@ const source = [
     ],
     ['¿De qué ha muerto, doctor?', 'Fallo multiorgánico', '!Qué hijaputa! Y conmigo los fingía'],
     [
-        'No aguantes nada. ¿Y tu eres el hombre de acero?',
+        'No aguantas nada. ¿Y tu eres el hombre de acero?',
         'No me entendiste bien. Soy el hombre da cero',
         '¿Y cuál es tu super poder entonces?',
         'Siempre doy negativo en los controles de alcoholemia'
