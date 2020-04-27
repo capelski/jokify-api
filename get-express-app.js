@@ -51,6 +51,13 @@ module.exports = (environmentConfig = {}) => {
         })
     );
 
+    app.get('/limits', (req, res) => {
+        res.status(200).json({
+            oldest: jokesRepository.getOldest().id,
+            newest: jokesRepository.getNewest().id
+        });
+    });
+
     app.get('/joke/:id', (req, res) => {
         if (!req.session.excludedIndexes) {
             req.session.excludedIndexes = [];
