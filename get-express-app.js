@@ -6,37 +6,34 @@ const defaultConfig = {
     SESSION_SECRET: 'to be replaced with environment variables'
 };
 
-const getRandomNumber = (maxValue, excludedNumbers) => {
-    let randomNumber = Math.round(Math.random() * Number.MAX_SAFE_INTEGER) % maxValue;
-    while (excludedNumbers.indexOf(randomNumber) > -1) {
-        randomNumber = (randomNumber + 1) % maxValue;
+const addJokeToServedJokes = (jokeId, servedJokesId) => {
+    if (servedJokesId.indexOf(jokeId) === -1) {
+        servedJokesId.push(jokeId);
     }
-    return randomNumber;
 };
 
-const getAlreadyServedJoke = (requestSession, filter, filteredJokes) => {
-    if (!requestSession.searches) {
-        // eslint-disable-next-line no-param-reassign
-        requestSession.searches = {};
-    }
-    const { searches } = requestSession;
+const getNonServedId = (min, max, servedJokesId) => {
+    let randomId = getRandomId(min, max);
 
-    searches[filter] =
-        (requestSession.searches[filter] &&
-            requestSession.searches[filter].length < filteredJokes.length &&
-            requestSession.searches[filter]) ||
-        [];
-    const joke = filteredJokes.find(j => requestSession.searches[filter].indexOf(j.id) === -1);
-    requestSession.searches[filter].push(joke.id);
-    return joke;
+    while (servedJokesId.indexOf(randomId) > -1) {
+        randomId = randomId === max ? min : randomId + 1;
+    }
+
+    return randomId;
 };
 
+const getRandomId = (min, max) => Math.round(Math.random() * (max - min) + min);
+
+// Values that don't change during execution time
 const jokesCount = jokesRepository.count();
+const newestJoke = jokesRepository.getNewest();
+const oldestJoke = jokesRepository.getOldest();
 
 module.exports = (environmentConfig = {}) => {
     const app = express();
 
-    app.use((req, res, next) => {
+    // Allow CORS for development purposes
+    app.use((_req, res, next) => {
         res.header('Access-Control-Allow-Origin', 'http://localhost:8080');
         res.header('Access-Control-Allow-Methods', '*');
         res.header('Access-Control-Allow-Headers', '*');
@@ -45,57 +42,81 @@ module.exports = (environmentConfig = {}) => {
 
     app.use(
         session({
-            secret: environmentConfig.SESSION_SECRET || defaultConfig.SESSION_SECRET,
             resave: false,
-            saveUninitialized: true
+            saveUninitialized: true,
+            secret: environmentConfig.SESSION_SECRET || defaultConfig.SESSION_SECRET
         })
     );
 
-    app.get('/limits', (req, res) => {
+    app.get('/limits', (_req, res) => {
         res.status(200).json({
-            oldest: jokesRepository.getOldest().id,
-            newest: jokesRepository.getNewest().id
+            oldest: oldestJoke.id,
+            newest: newestJoke.id
         });
     });
 
-    app.get('/joke/:id', (req, res) => {
-        if (!req.session.excludedIndexes) {
-            req.session.excludedIndexes = [];
+    app.use((req, _res, next) => {
+        if (!req.session.servedJokesId) {
+            req.session.servedJokesId = [];
+            req.session.searches = {};
         }
-        const { excludedIndexes } = req.session;
+        next();
+    });
 
-        if (excludedIndexes.length === jokesCount) {
-            excludedIndexes.length = 0;
+    app.get('/joke/newest', (req, res) => {
+        addJokeToServedJokes(newestJoke.id, req.session.servedJokesId);
+        res.status(200).json(newestJoke);
+    });
+
+    app.get('/joke/oldest', (req, res) => {
+        addJokeToServedJokes(oldestJoke.id, req.session.servedJokesId);
+        res.status(200).json(oldestJoke);
+    });
+
+    app.get('/joke/random', (req, res) => {
+        if (req.session.servedJokesId.length === jokesCount) {
+            req.session.servedJokesId.length = 0;
         }
 
-        const { id } = req.params;
+        const randomId = getNonServedId(oldestJoke.id, newestJoke.id, req.session.servedJokesId);
+        const randomJoke = jokesRepository.getByIndex(randomId);
 
-        let joke;
+        addJokeToServedJokes(randomJoke.id, req.session.servedJokesId);
+        res.status(200).json(randomJoke);
+    });
 
-        if (id === 'newest') {
-            joke = jokesRepository.getNewest();
-        } else if (id === 'oldest') {
-            joke = jokesRepository.getOldest();
-        } else if (id === 'random') {
-            const randomId = getRandomNumber(jokesCount, excludedIndexes);
-            joke = jokesRepository.getByIndex(randomId);
-        } else if (id === 'filter') {
-            const text = req.query.text || '';
-            const filteredJokes = jokesRepository.getAll(text);
-            joke =
-                filteredJokes.find(j => excludedIndexes.indexOf(j.id) === -1) ||
-                (filteredJokes.length > 0 &&
-                    getAlreadyServedJoke(req.session, text, filteredJokes));
+    app.get('/joke/filtered', (req, res) => {
+        const text = req.query.text || '';
+        const filteredJokes = jokesRepository.getAll(text);
+
+        if (filteredJokes.length > 0) {
+            if (
+                req.session.searches[text] === undefined ||
+                req.session.searches[text] === filteredJokes.length
+            ) {
+                req.session.searches[text] = 0;
+            }
+
+            const filteredJoke = filteredJokes[req.session.searches[text]];
+            req.session.searches[text]++;
+
+            addJokeToServedJokes(filteredJoke.id, req.session.servedJokesId);
+            res.status(200).json(filteredJoke);
         } else {
-            joke = jokesRepository.getByIndex(parseInt(id, 10));
+            res.status(404).send(`There are no jokes containing "${text}"`);
         }
+    });
+
+    app.get('/joke/:id', (req, res) => {
+        const { id } = req.params;
+        const joke = jokesRepository.getByIndex(parseInt(id, 10));
 
         if (joke) {
-            excludedIndexes.push(joke.id);
+            addJokeToServedJokes(joke.id, req.session.servedJokesId);
+            res.status(200).json(joke);
+        } else {
+            res.status(404).send('Not found');
         }
-
-        const status = joke ? 200 : 404;
-        res.status(status).json(joke || 'Not found');
     });
 
     return app;
