@@ -1004,7 +1004,8 @@ const source = [
         'No me entendiste bien. Soy el hombre da cero',
         '¿Y cuál es tu super poder entonces?',
         'Siempre doy negativo en los controles de alcoholemia'
-    ]
+    ],
+    ['Aceros inoxidables S.A. ¿Que desea?', 'Quiero hacerme inoxidable']
 ];
 
 const jokes = source.map((text, index) => ({
