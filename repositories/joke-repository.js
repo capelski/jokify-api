@@ -1005,7 +1005,14 @@ const source = [
         '¿Y cuál es tu super poder entonces?',
         'Siempre doy negativo en los controles de alcoholemia'
     ],
-    ['Aceros inoxidables S.A. ¿Que desea?', 'Quiero hacerme inoxidable']
+    ['Aceros inoxidables S.A. ¿Que desea?', 'Quiero hacerme inoxidable'],
+    ['Estos pantalones huelen a tabaco', 'Es que son de pitillo'],
+    ['¿A qué te dedicas?', 'Soy topógrafo', 'Anda... ¿y no haces fotos a otros animales?'],
+    [
+        'Me voy de vacaciones a la selva con mis hijos',
+        'Pues llévate el repelente',
+        'No no, el mayor se queda en casa'
+    ]
 ];
 
 const jokes = source.map((text, index) => ({
