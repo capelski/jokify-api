@@ -1012,6 +1012,11 @@ const source = [
         'Me voy de vacaciones a la selva con mis hijos',
         'Pues llévate el repelente',
         'No no, el mayor se queda en casa'
+    ],
+    ['Amor, ¿puedes ser que lo nuestro se esté enfriando?', 'No creo, saludos cordiales'],
+    [
+        'Cariño, los plátanos del vecino cuelgan en nuestro jardín. ¿Serán nuestros legalmente? Por estar dentro de nuestra propiedad',
+        'No sé... por esa regla también seria tuyo mi dedo si te lo meto por el culo'
     ]
 ];
 
