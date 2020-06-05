@@ -1017,6 +1017,13 @@ const source = [
     [
         'Cariño, los plátanos del vecino cuelgan en nuestro jardín. ¿Serán nuestros legalmente? Por estar dentro de nuestra propiedad',
         'No sé... por esa regla también seria tuyo mi dedo si te lo meto por el culo'
+    ],
+    ['¿Te apetece cybersexo?', 'Hoy no, me duele el wifi'],
+    ['¿Dónde vas con ese cuerpo, preciosa?', 'A enterrarlo en el bosque'],
+    [
+        'Te puedes comer el caballo',
+        'Es que soy vegano',
+        'De verdad, no juego más contigo al ajedrez'
     ]
 ];
 
