@@ -1024,7 +1024,9 @@ const source = [
         'Te puedes comer el caballo',
         'Es que soy vegano',
         'De verdad, no juego más contigo al ajedrez'
-    ]
+    ],
+    ['Resume tu vida sexual en dos palabras', '¿Mi que?'],
+    ['Mi vida sexual es como la Coca Cola. Primero fue normal, después light y ahora zero']
 ];
 
 const jokes = source.map((text, index) => ({
