@@ -1026,7 +1026,24 @@ const source = [
         'De verdad, no juego más contigo al ajedrez'
     ],
     ['Resume tu vida sexual en dos palabras', '¿Mi que?'],
-    ['Mi vida sexual es como la Coca Cola. Primero fue normal, después light y ahora zero']
+    ['Mi vida sexual es como la Coca Cola. Primero fue normal, después light y ahora zero'],
+    [
+        'Háblame mal',
+        'Haiga, almondiga, bayonesa, cachup...',
+        'Sigue así, no pares',
+        'Retonda, mircromina...'
+    ],
+    [
+        'Aquí Tango 343, inicio vuelo rasante para reconocer el terreno',
+        '¿Qué haces gateando por el pasillo? Vienes fino',
+        'Radar detectado'
+    ],
+    ['Pásate el Shazam por el sobaco, que te canta a no se qué'],
+    [
+        '¿De dos bolas el helado, cariño?',
+        'Con que ya andas metiendo la polla en la nevera',
+        'Joder, te las sabes todas'
+    ]
 ];
 
 const jokes = source.map((text, index) => ({
