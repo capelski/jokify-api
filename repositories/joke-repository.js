@@ -1043,7 +1043,8 @@ const source = [
         '¿De dos bolas el helado, cariño?',
         'Con que ya andas metiendo la polla en la nevera',
         'Joder, te las sabes todas'
-    ]
+    ],
+    ['Vengo por lo de las clases de salsa', '¿Y esa barra de pan?', 'Para mojar']
 ];
 
 const jokes = source.map((text, index) => ({
